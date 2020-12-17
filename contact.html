@@ -1,0 +1,76 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+<title>Contact</title>
+</head>
+<body>
+<img src="media/logo.png" class="floatRight" width="100px" height="100px"> 
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<body>
+<a href="index.html">Home</a>
+<br>
+<style>
+    .wow {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      height: 60%;
+    }
+</style>
+<img src="media/contact.jpeg" class="wow" alt="Contact">
+<br>
+<style>
+.fa-facebook {
+    align:center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width:75px;
+}
+.fa-instagram {
+    align:center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width:75px;
+   
+} 
+.fa-gmail{
+    align:center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width:75px;
+}
+</style>
+<a href="https://www.facebook.com/anis.yusof.165/"><img src="media/facebook.png" class="fa-facebook"></a>
+<a href="https://www.instagram.com/anisnrmn/"><img src="media/instagram.jpg" class="fa-facebook"></a>
+<figure>
+<img src="media/gmail.png" class="fa-gmail">
+<figurecaption>anisyusof15@gmail.com</figurecaption>
+</figure>
+</body>
+</html>

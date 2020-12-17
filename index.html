@@ -1,0 +1,212 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<div class="w3-container w3-center w3-animate-opacity"></div>
+<body>
+<marquee loop="8">
+Welcome to My Website!
+</marquee>
+<left><a></a>
+  <script type='text/javascript' text-align = 'right' src='https://www.freevisitorcounters.com/auth.php?id=c3f7daa8eb8c9cabace5bc8c3cb90ed30b6967c6'></script>
+  <script type="text/javascript" text-align = 'right' src="https://www.freevisitorcounters.com/en/home/counter/774344/t/2"></script></left>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  <body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      margin: 0;
+    }
+    
+    /* Style the header */
+    .header {
+      padding: 20px;
+      text-align: center;
+    }
+    /* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#E5D5DE;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #0F0D0E ;
+  text-align: center;
+  padding: 11px 30px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #FDF9FC ;
+  color: black;
+}
+</style>
+</head>
+<div class="header">
+<h1 style="font-size:50px">Anis Yusof</h1>
+<p1 style="font-size:25px">Is the kind of the person
+<br> who would never leave you on read
+</p1>
+</div>
+<div class="topnav">
+  <b><a href="contact.html">Contact</a></b>
+  <b><a href="gallery.html">Gallery</a></b>
+  <b><a href="family.html">Family</a></b>
+  <b><a href="education.html">Education</a></b>
+  <b><a href="experience.html">Experience</a></b>
+  <b><a href="#me">Me</a></b>
+  <b><a href="index.html">Home</a></b>
+  <body>
+          <style>
+
+                    .styling{
+                    background-color:none;
+                    color:rgb(228, 13, 120);
+                    font: bold 20px MS Sans Serif;
+                    padding: 5px;
+                    }
+                   
+                    </style>
+                    <span id="digitalclock" class="styling"></span>
+        
+        <script>
+        
+        /*****************************************
+        * LCD Clock script- by Javascriptkit.com
+        * Featured on/available at http://www.dynamicdrive.com/
+        * This notice must stay intact for use
+        *****************************************/
+        
+        var alternate=0
+        
+        function show(){
+        var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+        var Digital=new Date()
+        var hours=Digital.getHours()
+        var minutes=Digital.getMinutes()
+        var dn="AM"
+        
+        if (hours==12) dn="PM" 
+        if (hours>12){
+        dn="PM"
+        hours=hours-12
+        }
+        if (hours==0) hours=12
+        if (hours.toString().length==1)
+        hours="0"+hours
+        if (minutes<=9)
+        minutes="0"+minutes
+        
+        if (alternate==0)
+        clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+        else
+        clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+        alternate=(alternate==0)? 1 : 0
+        setTimeout("show()",1000)
+        }
+        window.onload=show
+        
+        //-->
+        </script>
+      </div>
+<br>
+<br>
+<body>
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="media/p5.jpg" style="width:95%;height:60%" class="center">
+  <div class="text"></div>
+  </div>
+        
+  <div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="media/p13.jpg" style="width:95%;height:60%" class="center">
+  <div class="text"></div>
+  </div>
+        
+  <div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="media/medal.jpeg" style="width:95%;height:60%" class="center">
+  <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="media/p3.jpg" style="width:95%;height:60%" class="center">
+  <div class="text"></div>      
+  </div>   
+  <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  </div>
+        
+  <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+<br>
+<a name="me"></a><img src="media/banner.jpg" class="center">
+</tr>
+<body>
+<embed width="0" height="0" src="media/music.mp3" autostart="true" loop="true">
+</embed>
+<body>
+<footer>
+<p>Copyright © 2020 Anis Yusof <br>
+This website is develop for IMD311</p>
+</footer>
+</dive>
+</body>
+</html>
